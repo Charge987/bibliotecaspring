@@ -19,5 +19,7 @@ public class LivroController {
         model.addAttribute("livros", livroRepo.findAll());
         return "/WEB-INF/livro/list.jsp";
     }
-    
+    public String insert() {
+        return "/WEB-INF/livro/insert.jsp";
+    }
 }
